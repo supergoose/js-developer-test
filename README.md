@@ -22,3 +22,6 @@
 * [Cloud9 IDE](http://c9.io/)
 
 ## Difficulties
+
+Adding the About Me section - I wanted to use JSON and Handlebars straightaway.
+Not sure whether the image for "photo" section should take responsive web development into account.

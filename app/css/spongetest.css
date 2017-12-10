@@ -57,15 +57,31 @@ body {
   #header h1 + p {
     font-size: 1.8em;
   }
+  
+#about-me{
+  padding-top:30px;
+}
+
+#about-me .about-content{
+  display:none;
+}
+
+#about-me .active{
+  display:block;
+}
+
+#about-me img{
+  max-width:100%;
+}
 
 #content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-  #content img{
-    width: 100%;
-  }
+#content img{
+  width: 100%;
+}
 
 #tasks {
   padding-top: 30px;

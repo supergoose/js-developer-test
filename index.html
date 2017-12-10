@@ -28,6 +28,37 @@
 <div class="grid-container">
   <section class="grid-50">
     <!-- INSERT YOUR "ABOUT ME" SECTION HERE -->
+    
+    <!-- LOOKS LIKE I'M NOT EXPECTED TO USE HANDLEBAR FOR THIS BIT... -->
+      <div id="about-me">
+        <ul class="tabs">
+          <li class="current"><a href="#" onclick="onTabClick(event, 'about')">About Me</a></li>
+          <li><a href="#" onclick="onTabClick(event, 'photo')">Photo</a></li>
+          <li><a href="#" onclick="onTabClick(event, 'links')">Links</a></li>
+        </ul>
+        <about class="about-content active">
+          <p>Hello! Nice to e-meet you. Welcome to the About Me section.</p>
+          <p>I like making things and I like the great outdoors (it's great). Sometimes I even combine the two, and make things outdoors.</p>
+          <p>Last weekend I went for a walk with some friends. Whilst walking through a really muddy farmers field my wellington boot came off, but I didn't realise until it was too late. I plunged my besocked foot straight into the squelchy mud. The mud was incredible smelly and wet, and went up to my knee. Oh how we laughed!</p>
+          <p><strong>Fun Fact: I have a moustache</strong></p>
+        </about>
+        <photo class="about-content">
+          <img src="app/images/andy-portrait.jpg" alt="Portrait of testee - Andy Sargeant" />
+        </photo>
+        <links class="about-content">
+          <ul>
+            <li><a href="https://youtu.be/gfeSluY8pp0" target="_blank">HTML5 Slideshow</a> - Lead Developer: HTML5/PHP/MySQL</li>
+            <li><a href="https://www.youtube.com/watch?v=u2sYz3uzBHA" target="_blank">Musomic iPad App</a> - Lead Developer: Objective-C/iOS SDK/CoreGraphics/OpenGL</li>
+            <li><a href="https://youtu.be/-5DYiktgjtI?t=37s" target="_blank">Yak Dash: Horns of Glory</a> - Level Designer: Unity</li>
+            <li><a href="https://vimeo.com/48600828" target="_blank">Half-Inch Heist iPad / iPhone</a> - Lead Developer / Game Designer: Objective-C/Flixel-iOS</li>
+            <li><a href="https://www.youtube.com/watch?v=48EPTk1fYDs" target="_blank">Empathy Swap</a> - Solo Game Jam Entry: Unity/C#/Adobe Illustrator/AudioTool</li>
+            <li><a href="https://www.youtube.com/watch?v=vIo2TjbaNss" target="_blank">Hyper Cortex: Why Does My Brain?</a> - Solo Game Jam Entry: Unity/C#/Adobe Illustrator/AudioTool</li>
+            <li>Kinect/OpenGL Visualisations: <a href="https://youtu.be/ivRgc5kIMMU" target="_blank">One</a> | <a href="https://youtu.be/5l0tjJXB9-s" target="_blank">Two</a> | <a href="https://www.youtube.com/watch?v=eTs5d2tOcHg" target="_blank">Three</a> - Processing/Java/C++/Cinder/OpenGL</li>
+          </ul>
+        </links>
+      </div>
+      
+      
     <article id="content"></article>
     <noscript>
       <h1>You must enable JavaScript in order to view this page.</h1>
