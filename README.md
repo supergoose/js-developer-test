@@ -6,7 +6,7 @@
 | ------------------------------ | ---------- |
 | 2. Your name                   | 0h 5m |
 | 3. Edit content                | 0h 2m |
-| 4. Replace content             | |
+| 4. Replace content             | 0h 30m |
 | 5. Add content                 | |
 | 6. Modify your new content     | |
 | 7. Simplify JavaScript         | |
