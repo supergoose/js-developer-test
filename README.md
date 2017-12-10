@@ -1,28 +1,25 @@
+# Andrew Sargeant
 # Sponge UK Developer Test
 
-## Getting started
+## Task Time Tracking
 
-In order to run this test, you must either host this project on a web server or enable local file execution in your browser.
+| Task                           | Time Taken (hours) |
+| ------------------------------ | ------------------ |
+| 2. Your name                   | |
+| 3. Edit content                | |
+| 4. Replace content             | |
+| 5. Add content                 | |
+| 6. Modify your new content     | |
+| 7. Simplify JavaScript         | |
+| 8. Convert CSS to LESS or SASS | |
+| 9. CSS boxes                   | |
+| 10. Task Runnder               | |
+| 11. Rewrite JavaScript         | |
+| 12. Responsive font size       | |
+| 13. Transpile JavaScript       | |
 
-### NodeJS server (preferred)
+## Tools used
 
-1. `npm i`
-2. `npm start`
-3. [Open the test in your browser](http://localhost:3000)
+* [Cloud9 IDE](http://c9.io/)
 
-### Local web server
-
-* [WAMP](http://www.wampserver.com/en/) - Windows, Apache, MySQL, PHP
-* [MAMP](https://www.mamp.info/en/) - Mac, Apache, MySQL, PHP
-* [Fenix](http://fenixwebserver.com/)
-* [LightTPD](http://www.lighttpd.net/)
-
-### Chrome with local file support
-
-If you aren't able to install or run a web server, you can open the files directly in Chrome. To do this, you must [enable the requests with the protocol of `file://`](https://github.com/mrdoob/three.js/wiki/How-to-run-things-locally).
-
-## Tools required
-
-* An IDE of your choice (e.g. [Sublime Text](https://www.sublimetext.com/3))
-* A web browser (e.g. [Chrome](https://www.google.com/chrome/))
-* A copy of Microsoft Word (for opening the example text - you may be able to use [Google Docs](https://www.google.co.uk/docs/about/) instead)
+## Difficulties
