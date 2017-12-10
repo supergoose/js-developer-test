@@ -2,10 +2,10 @@
 
 ## Task Time Tracking
 
-| Task                           | Time Taken (hours) |
-| ------------------------------ | ------------------ |
-| 2. Your name                   | |
-| 3. Edit content                | |
+| Task                           | Time Taken |
+| ------------------------------ | ---------- |
+| 2. Your name                   | 0h 5m |
+| 3. Edit content                | 0h 2m |
 | 4. Replace content             | |
 | 5. Add content                 | |
 | 6. Modify your new content     | |
