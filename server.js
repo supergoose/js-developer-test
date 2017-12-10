@@ -3,6 +3,6 @@ const connect = require( 'connect' ),
 
 connect()
 		.use( serveStatic( '.' ) )
-		.listen( 3000, () => {
-			console.log( 'Server running on port 3000...' );
+		.listen( process.env.PORT, process.env.IP, () => {
+			console.log( 'Server running on Cloud9 IDE env Port. \nIf you were expecting to see port 3000, you need to edit server.js.' );
 		} );

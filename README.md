@@ -1,5 +1,4 @@
-# Andrew Sargeant
-# Sponge UK Developer Test
+# Andrew Sargeant (Developer Test)
 
 ## Task Time Tracking
 
