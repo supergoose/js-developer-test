@@ -7,9 +7,9 @@
 | 2. Your name                   | 0h 5m |
 | 3. Edit content                | 0h 2m |
 | 4. Replace content             | 0h 30m |
-| 5. Add content                 | 1h 30m |
-| 6. Modify your new content     | |
-| 7. Simplify JavaScript         | |
+| 5. Add content                 | 1h 0m |
+| 6. Modify your new content     | 0h 30m |
+| 7. Simplify JavaScript         | 0h 45m |
 | 8. Convert CSS to LESS or SASS | |
 | 9. CSS boxes                   | |
 | 10. Task Runnder               | |
