@@ -22,61 +22,13 @@ jQuery(
 			 * A new instance of the content parser using the content JSON file
 			 */
 			var resContent = new Content( 'app/data/content.json' );
-
-			/**
-			 * Populate the header
-			 */
-			var populateHeader = function() {
-				var strHeaderSource = $( '#header-template' ).html(),
-						resHeaderTemplate = Handlebars.compile( strHeaderSource ),
-						strHeaderHTML = resHeaderTemplate( resContent.getItem( 'header' ) );
-
-				$( '#header' ).html( strHeaderHTML );
-			};
-
-			/**
-			 * Populate the tasks
-			 */
-			var populateTasks = function() {
-				var strTaskSource = $( '#task-template' ).html(),
-						resTasksTemplate = Handlebars.compile( strTaskSource ),
-						strTasksHTML = resTasksTemplate( resContent.getItem( 'tasks' ) );
-
-				$( '#tasks' ).append( strTasksHTML );
-			};
 			
-			/**
-			 * Populate the about
-			 */
-			var populateAboutMe = function() {
-				var strContentSource = $( '#about-template' ).html(),
-						resContentTemplate = Handlebars.compile( strContentSource ),
-						strContentHTML = resContentTemplate( resContent.getItem( 'about-me' ) );
-
-				$( '#about-me' ).append( strContentHTML );
-			};
-
-			/**
-			 * Populate the content
-			 */
-			var populateContent = function() {
-				var strContentSource = $( '#content-template' ).html(),
-						resContentTemplate = Handlebars.compile( strContentSource ),
-						strContentHTML = resContentTemplate( resContent.getItem( 'content' ) );
-
-				$( '#content' ).append( strContentHTML );
-			};
-
-			/**
-			 * Populate the documentation links
-			 */
-			var populateDocumentation = function() {
-				var strContentSource = $( '#documentation-template' ).html(),
-						resContentTemplate = Handlebars.compile( strContentSource ),
-						strContentHTML = resContentTemplate( resContent.getItem( 'docs' ) );
-
-				$( '#documentation' ).append( strContentHTML );
-			};
+			var sections = [
+							'header', 
+							'tasks', 
+							'about-me', 
+							'content', 
+							'documentation'];
 
 			/**
 			 * Register a Handlebars helper for the difficulty stars
@@ -102,11 +54,10 @@ jQuery(
 			 */
 			resContent.onReady(
 					function() {
-						populateHeader();
-						populateAboutMe();
-						populateTasks();
-						populateContent();
-						populateDocumentation();
+						for(var i in sections)
+						{
+							resContent.populateHTML(sections[i]);
+						}
 					}
 			);
 		}

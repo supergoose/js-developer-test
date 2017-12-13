@@ -18,9 +18,11 @@
 
 (function( window, $ ) {
 			var ContentInstance = function( strDataLocation ) {
+				
 				var objContent = {},
 						arrOnReady = [],
 						blReady = false;
+
 
 				/**
 				 * Get the JSON file
@@ -58,6 +60,22 @@
 				this.getItem = function( intItem ) {
 					return objContent[intItem];
 				};
+				
+				/**
+				 * Gets corresponding data from content.json and populates the HTML document. 
+				 */
+				this.populateHTML = function(sectionId)
+				{
+					try{
+						var strSource = $( '#'+sectionId+'-template' ).html(),
+								resTemplate = Handlebars.compile( strSource ),
+								strHTML = resTemplate( this.getItem( sectionId ) );
+		
+						$( '#'+sectionId ).html( strHTML );
+					}catch(err){
+						console.warn("Error populating '" + sectionId + "': " + err);
+					}
+				}
 
 				return this;
 			};
@@ -67,25 +85,3 @@
 			 */
 			window.Content = ContentInstance;
 		})( window, jQuery );
-
-/*
-      ,'``.._   ,'``.
-     :,--._:)\,:,._,.:       All Glory to
-     :`--,''   :`...';\      the HYPNOTOAD!
-      `,'       `---'  `.
-      /                 :
-     /                   \
-   ,'                     :\.___,-.
-  `...,---'``````-..._    |:       \
-    (                 )   ;:    )   \  _,-.
-     `.              (   //          `'    \
-      :               `.//  )      )     , ;
-    ,-|`.            _,'/       )    ) ,' ,'
-   (  :`.`-..____..=:.-':     .     _,' ,'
-    `,'\ ``--....-)='    `._,  \  ,') _ '``._
- _.-/ _ `.       (_)      /     )' ; / \ \`-.'
-`--(   `-:`.     `' ___..'  _,-'   |/   `.)
-    `-. `.`.``-----``--,  .'
-      |/`.\`'        ,',');
-          `         (/  (/
- */
