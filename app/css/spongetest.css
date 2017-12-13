@@ -126,6 +126,18 @@ strong {
 #tasks article h5 .difficulty .fa-star-o {
   color: #7E7772; }
 
+/**
+ * Styles to make the boxes actually visible to start
+ */
+#boxes {
+  padding: 40px; }
+
+#box-left {
+  height: 50px; }
+
+#box-right {
+  height: 50px; }
+
 #footer-wrapper {
   padding-top: 30px;
   padding-bottom: 10px;
