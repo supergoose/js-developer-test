@@ -4,6 +4,47 @@
     "subtitle": "May the force be with you",
     "myname": "Andy Sargeant"
   },
+  "about-me": {
+    "about" : "<p>Hello! Nice to e-meet you. Welcome to the About Me section.</p><p>I like making things and I like the great outdoors (it's great). Sometimes I even combine the two, and make things outdoors.</p><p>Last weekend I went for a walk with some friends. Whilst walking through a really muddy farmers field my wellington boot came off, but I didn't realise until it was too late. I plunged my besocked foot straight into the squelchy mud. The viscous brown mud was smelly and wet, and went up to my knee. Oh how we laughed!</p><p><strong>Fun Fact: I have a moustache</strong></p>",
+    "image" : "./resources/andy-portrait.jpg",
+    "portfolio" : [
+        {
+          "title" : "HTML5 Slideshow",
+          "description" : "Lead Developer: HTML5/PHP/MySQL",
+          "link" : "https://youtu.be/gfeSluY8pp0"
+        },
+        {
+          "title" : "Musomic iPad App",
+          "description" : "Lead Developer: Objective-C/iOS SDK/CoreGraphics/OpenGL",
+          "link" : "https://www.youtube.com/watch?v=u2sYz3uzBHA"
+        },
+        {
+          "title" : "Yak Dash: Horns of Glory",
+          "description" : "Level Designer: Unity",
+          "link" : "https://youtu.be/-5DYiktgjtI?t=37s0"
+        },
+        {
+          "title" : "Half-Inch Heist iPad / iPhone",
+          "description" : "Lead Developer / Game Designer: Objective-C/Flixel-iOS",
+          "link" : "https://vimeo.com/48600828"
+        },
+        {
+          "title" : "Empathy Swap",
+          "description" : "Solo Game Jam Entry: Unity/C#/Adobe Illustrator/AudioTool",
+          "link" : "https://www.youtube.com/watch?v=48EPTk1fYDs"
+        },
+        {
+          "title" : "Hyper Cortex: Why Does My Brain?",
+          "description" : "Solo Game Jam Entry: Unity/C#/Adobe Illustrator/AudioTool",
+          "link" : "https://www.youtube.com/watch?v=vIo2TjbaNss"
+        },
+        {
+          "title" : "Kinect/OpenGL Visualisations",
+          "description" : "Processing/Java/C++/Cinder/OpenGL",
+          "link" : "https://youtu.be/ivRgc5kIMMU"
+        }
+      ]
+  },
   "content": {
     "title": "HTML",
     "body": "<p><strong>HyperText Markup Language</strong>, commonly referred to as <strong>\"HTML\"</strong>, is the standard markup language used to create web pages. Along with <a href=\"https://en.wikipedia.org/wiki/Cascading_Style_Sheets\" target=\"_blank\">CSS</a> and <a href=\"https://en.wikipedia.org/wiki/JavaScript\" target=\"_blank\">JavaScript</a>, HTML is a cornerstone technology used by most websites to create visually engaging web pages, user interfaces for web applications and user interfaces for many mobile applications.</p><p>The W3C recommend several conventions to ensure an easy migration between HTML and XHTML (see <a href=\"https://www.w3.org/TR/xhtml1/#guidelines\" target=\"_blank\">HTML Compatibility Guidelines</a>). The following steps can be applied to XHMTL 1.0 documents only:<ol><li>Include both xml:lang and lang attributes on any elements assigning language.</li><li>Use the empty-element syntax only for elements specified as empty in HTML.</li><li>Include an extra space in empty–element tags (for example, &lt;br /&gt; instead of &lt;br/&gt;).<li>Include explicit close tags for elements that permit content but are left empty (for example, &lt;div&gt;&lt;/div&gt;, not &lt;div /&gt;).</li><li>Omit the XML declaration.</li></ol><p><strong>HTML5</strong> is a markup language used for structuring and presenting content on the <a href=\"https://en.wikipedia.org/wiki/World_Wide_Web\" target=\"_blank\">World Wide Web</a>. It was finalised, and published, on 28 October 2014 by the World Wide Web Consortium (W3C). This is the fifth revision of the <a href=\"https://en.wikipedia.org/wiki/HTML\" target=\"_blank\">HTML</a> standard since the inception of the World Wide Web.</p>",

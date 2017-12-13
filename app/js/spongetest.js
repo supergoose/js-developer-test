@@ -44,6 +44,17 @@ jQuery(
 
 				$( '#tasks' ).append( strTasksHTML );
 			};
+			
+			/**
+			 * Populate the about
+			 */
+			var populateAboutMe = function() {
+				var strContentSource = $( '#about-template' ).html(),
+						resContentTemplate = Handlebars.compile( strContentSource ),
+						strContentHTML = resContentTemplate( resContent.getItem( 'about-me' ) );
+
+				$( '#about-me' ).append( strContentHTML );
+			};
 
 			/**
 			 * Populate the content
@@ -92,6 +103,7 @@ jQuery(
 			resContent.onReady(
 					function() {
 						populateHeader();
+						populateAboutMe();
 						populateTasks();
 						populateContent();
 						populateDocumentation();
