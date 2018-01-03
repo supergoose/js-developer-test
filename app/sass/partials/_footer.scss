@@ -1,0 +1,16 @@
+#footer-wrapper {
+  padding-top: $gutter;
+  padding-bottom: 10px;
+
+  position: relative;
+
+  color: $white;
+
+  background-color: $darkgrey;
+
+  z-index: 2;
+}
+
+  #footer a {
+    color: inherit;
+  }

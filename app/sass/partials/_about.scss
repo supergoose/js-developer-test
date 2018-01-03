@@ -1,0 +1,16 @@
+#about-me{
+  padding-top:$gutter;
+}
+
+#about-me .about-content{
+  display:none;
+}
+
+#about-me .active{
+  display:block;
+}
+
+#about-me img{
+  max-width:100%;
+}
+

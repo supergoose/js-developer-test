@@ -1,0 +1,55 @@
+#tasks {
+  padding-top: $gutter;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+
+  position: relative;
+
+  background-color: $tasksbg;
+
+  counter-reset: tasks;
+
+  z-index: 1;
+}
+
+#tasks article {
+    counter-increment: tasks;
+  }
+
+#tasks article h5 {
+  color: $coral;
+}
+
+#tasks article h5::before {
+  min-width: 0.75em;
+  padding-right: 0.5em;
+
+  display: inline-block;
+
+  color: $darkgrey;
+  font-weight: 300;
+  vertical-align: text-bottom;
+
+  content: counter(tasks) ".";
+}
+
+#tasks article h5 .difficulty {
+  margin-left: 1.5em;
+
+  display: inline-block;
+
+  float: right;
+
+  color: $tasknums;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+#tasks article h5 .difficulty .fa {
+  margin-left: 0.1em;
+}
+
+#tasks article h5 .difficulty .fa-star-o {
+  color: $staryellow;
+}

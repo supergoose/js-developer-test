@@ -1,0 +1,69 @@
+
+/* Colour vars */
+$gutter: 30px;
+$coral: #F9423A;
+$tasksbg: #F2F2F2;
+$darkgrey: #212D35;
+$white: #FFF;
+$codebg: #D4D4D4;
+$tasknums: #FFB400;
+$staryellow: #7E7772;
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300|Roboto:300,300i,500,500i");
+
+/* Styles */
+body {
+  min-width: 320px;
+
+  font-family: "Roboto", serif;
+  color: $darkgrey;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $coral;
+}
+
+p,
+ul,
+ol {
+  font-size: 1.5em;
+}
+
+  p code,
+  li code {
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+
+    line-height: 1.35;
+    vertical-align: baseline;
+    font-size: 0.9em;
+
+    background-color: $codebg;
+
+    outline: none;
+  }
+
+code,
+pre {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 500;
+}

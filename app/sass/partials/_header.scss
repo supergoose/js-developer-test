@@ -1,0 +1,31 @@
+#header-wrapper {
+  position: relative;
+
+  background: $coral;
+
+  z-index: 2;
+}
+
+  #header {
+    padding-top: 2*$gutter;
+    padding-bottom: 45px;
+
+    color: $white;
+  }
+
+  #header img {
+    margin-right: auto;
+    margin-bottom: $gutter;
+    margin-left: auto;
+
+    display: block;
+  }
+
+  #header h1 {
+    color: $white;
+  }
+
+  #header h1 + p {
+    font-size: 1.8em;
+  }
+  

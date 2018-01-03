@@ -72,6 +72,7 @@
 						var strSource = $( '#'+sectionId+'-template' ).html(),
 								resTemplate = Handlebars.compile( strSource ),
 								strHTML = resTemplate( this.getItem( sectionId ) );
+								
 						$( '#'+sectionId ).html( strHTML );
 					}catch(err){
 						console.warn("Error populating '" + sectionId + "': " + err);
