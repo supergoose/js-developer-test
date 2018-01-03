@@ -12,7 +12,7 @@
 | 7. Simplify JavaScript         | 0h 45m |
 | 8. Convert CSS to LESS or SASS | 0h 30m |
 | 9. CSS boxes                   | |
-| 10. Task Runner                | |
+| 10. Task Runner                | 1h 0m |
 | 11. Rewrite JavaScript         | |
 | 12. Responsive font size       | |
 | 13. Transpile JavaScript       | |
