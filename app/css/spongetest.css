@@ -7,6 +7,9 @@ body {
   font-family: "Roboto", serif;
   color: #212D35;
   font-weight: 300; }
+  @media screen and (max-width: 500px) {
+    body {
+      font-size: 125%; } }
 
 h1,
 h2,
