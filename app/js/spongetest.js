@@ -16,12 +16,14 @@
 =====================================================
 */
 
+import {ContentInstance} from '/app/js/lib/content.js';
+
 jQuery(
 		function( $ ) {
 			/**
 			 * A new instance of the content parser using the content JSON file
 			 */
-			var resContent = new Content( 'app/data/content.json' );
+			var resContent = new ContentInstance( 'app/data/content.json' );
 			
 			var sections = [
 							'header', 
@@ -56,6 +58,7 @@ jQuery(
 					function() {
 						for(var i in sections)
 						{
+							console.log("Populate HTML");
 							resContent.populateHTML(sections[i]);
 						}
 					}

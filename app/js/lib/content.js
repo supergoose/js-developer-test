@@ -16,74 +16,64 @@
  =====================================================
 */
 
-(function( window, $ ) {
-			var ContentInstance = function( strDataLocation ) {
-				
-				var objContent = {},
-						arrOnReady = [],
-						blReady = false;
+export {ContentInstance}
+'use strict';
 
 
-				/**
-				 * Get the JSON file
-				 */
-				$.getJSON( strDataLocation,
-						function( objResponse ) {
-							objContent = objResponse;
-							blReady = true;
+class ContentInstance{
+	
+	constructor(strDataLocation)
+	{
+		this.thing = "Andy";
+		this.objContent = {};
+		this.arrOnReady = new Array();
+		this.blReady = false;
+		this.strDataLocation = strDataLocation;
+		
+		$.getJSON(this.strDataLocation, this.receivedJSON.bind(this));
+	}
+	
+	receivedJSON( objResponse )
+	{
+		this.objContent = objResponse;
+		this.blReady = true;
 
-							/**
-							 * Execute all the ready functions once loaded
-							 */
-							$.each( arrOnReady,
-									function( intIndex, funDoOnReady ) {
-										funDoOnReady.call();
-									}
-							);
-						}
-				);
-
-				/**
-				 * Register a function to execute once loaded
-				 */
-				this.onReady = function( funDoOnReady ) {
-					if( blReady ) {
-						funDoOnReady.call();
-					} else {
-						arrOnReady.push( funDoOnReady );
-					}
-				};
-
-				/**
-				 * Get an item from the content data
-				 */
-				this.getItem = function( intItem ) {
-					return objContent[intItem];
-				};
-				
-				/**
-				 * Gets corresponding data from content.json and populates the HTML document. 
-				 */
-				this.populateHTML = function(sectionId)
-				{
-					try{
-						
-						
-						var strSource = $( '#'+sectionId+'-template' ).html(),
-								resTemplate = Handlebars.compile( strSource ),
-								strHTML = resTemplate( this.getItem( sectionId ) );
-								
-						$( '#'+sectionId ).html( strHTML );
-					}catch(err){
-						console.warn("Error populating '" + sectionId + "': " + err);
-					}
-				}
-
-				return this;
-			};
-
-			/**
-			 * Add the ContentInstance method to the global scope
-			 */
-			window.Content = ContentInstance;
-		})( window, jQuery );
+		$.each( this.arrOnReady, function( intIndex, funDoOnReady ) 
+		{
+			funDoOnReady.call();
+		});
+	}
+	
+	onReady(funDoOnReady)
+	{
+		console.log("On Ready");
+		if(this.blReady)
+		{
+			funDoOnReady.call();
+		}else{
+			this.arrOnReady.push(funDoOnReady);
+		}
+	}
+	
+	requestContent(intItem)
+	{
+		return this.objContent[intItem];
+	}
+	
+	populateHTML(sectionId)
+	{
+		try{
+			var strSource = $( '#'+sectionId+'-template' ).html(),
+					resTemplate = Handlebars.compile( strSource ),
+					strHTML = resTemplate( this.requestContent( sectionId ) );
+					
+			$( '#'+sectionId ).html( strHTML );
+			
+			console.log("Applying: " + strHTML);
+			
+		}catch(err){
+			console.warn("Error populating '" + sectionId + "': " + err);
+		}
+	}
+	
+}

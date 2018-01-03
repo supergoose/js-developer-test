@@ -24,5 +24,12 @@
 ## Difficulties
 
 Adding the About Me section - I wanted to use JSON and Handlebars straightaway.
+
 Not sure whether the image for "photo" section should take responsive web development into account.
-It said no libraries - does this include not using the CSS that is currently implemented?
+
+The Task stipulated "no libraries" - does this include not using the CSS that is currently implemented?
+
+Task 10: Task Runner asked for me to add my dependencies to the package.json - wasn't sure if 
+this meant create an entirely seperate module and register it with NPM or to add to current
+package.json.
+
