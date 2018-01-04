@@ -15,13 +15,14 @@
  JSON parser and event handler
  =====================================================
 */
-
-export {ContentInstance}
 'use strict';
-
+export default
 
 class ContentInstance{
 	
+	/**
+	 * Runs to create an instance of the class. Begins process of retrieving JSON.
+	 **/
 	constructor(strDataLocation)
 	{
 		this.thing = "Andy";
@@ -33,6 +34,9 @@ class ContentInstance{
 		$.getJSON(this.strDataLocation, this.receivedJSON.bind(this));
 	}
 	
+	/**
+	 * Called when we have loaded our content json.
+	 **/
 	receivedJSON( objResponse )
 	{
 		this.objContent = objResponse;
@@ -44,6 +48,9 @@ class ContentInstance{
 		});
 	}
 	
+	/**
+	 * Called to either execute a function when page has loaded, or to push a function to a stack to be executed when the page finishes loading.
+	 **/
 	onReady(funDoOnReady)
 	{
 		console.log("On Ready");
@@ -55,11 +62,17 @@ class ContentInstance{
 		}
 	}
 	
+	/**
+	 * Call with a string ID to ascertain data from JSON.
+	 **/
 	requestContent(intItem)
 	{
 		return this.objContent[intItem];
 	}
 	
+	/**
+	 * Call when page is ready to be populated. Inserts content into HTML.
+	 **/
 	populateHTML(sectionId)
 	{
 		try{

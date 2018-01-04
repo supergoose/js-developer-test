@@ -16,7 +16,7 @@
 =====================================================
 */
 
-import {ContentInstance} from '/app/js/lib/content.js';
+import ContentInstance from './lib/content.js';
 
 jQuery(
 		function( $ ) {
