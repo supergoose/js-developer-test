@@ -11,12 +11,12 @@
 | 6. Modify your new content     | 0h 30m |
 | 7. Simplify JavaScript         | 0h 45m |
 | 8. Convert CSS to LESS or SASS | 0h 30m |
-| 9. CSS boxes                   | |
+| 9. CSS boxes                   | 4h 30m |
 | 10. Task Runner                | 1h 0m |
 | 11. Rewrite JavaScript         | 0h 30m |
 | 12. Responsive font size       | 0h 15m |
-| 13. Transpile JavaScript       | 3h 0m |
-| TOTAL                          | 8h 7m |
+| 13. Transpile JavaScript       | 2h 0m |
+| TOTAL                          | 12h 37m |
 
 ## Tools used
 
@@ -36,3 +36,5 @@ package.json.
 
 Task 13: Transpile JavaScript - Installing Babel to transpile ES6 JS to ES5 also required installing Browserify to ensure module is accessible to browsers.
 Issue discovered: Rephrased `export {ContentInstance}` to `export default` in order to overcome Babel 6 transpilation of import/export for ContentInstance class.
+
+Task 9: CSS boxes I left until last as I knew this would be one of the most time consuming activities. I have been able to test this on FireFox, Chrome and MS Edge. IE9/10/11 have been tested via the MS Edge emulator.

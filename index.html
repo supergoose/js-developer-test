@@ -125,11 +125,35 @@
 <!-- Handlebars -->
 <script src="vendor/handlebars-v4.0.5.js"></script>
 
-<!-- Simple JSON Content Parser -->
-<!--<script src="app/js/dist/lib/content.js" type="module"></script>-->
-
 <!-- The JS for this page -->
 <script src="app/js/dist/spongetest.js"></script>
+
+<script type="text/javascript">
+  /**
+ * Runs when the user clicks one of the "About Me" section tabs
+ */
+var onTabClick = function(evt, tagToShow)
+{
+	
+	var aboutElementsArr = document.getElementsByClassName("about-content");
+	for(var i in aboutElementsArr)
+	{
+		aboutElementsArr[i].className = "about-content";
+	}
+	
+	var elem = document.getElementsByTagName(tagToShow)[0];
+	elem.className += " active";
+	
+	var tabContainer = document.getElementsByClassName("tabs")[0];
+	var tabsArray = tabContainer.getElementsByTagName("li");
+	for(var i in tabsArray)
+	{
+		tabsArray[i].className = "";
+	}
+	evt.target.parentNode.className += " current";
+	
+}
+</script>
 
 <!--
   =====================================================

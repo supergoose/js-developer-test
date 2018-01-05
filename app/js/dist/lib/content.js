@@ -26,6 +26,10 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var ContentInstance = function () {
+
+	/**
+  * Runs to create an instance of the class. Begins process of retrieving JSON.
+  **/
 	function ContentInstance(strDataLocation) {
 		_classCallCheck(this, ContentInstance);
 
@@ -38,6 +42,11 @@ var ContentInstance = function () {
 		$.getJSON(this.strDataLocation, this.receivedJSON.bind(this));
 	}
 
+	/**
+  * Called when we have loaded our content json.
+  **/
+
+
 	_createClass(ContentInstance, [{
 		key: "receivedJSON",
 		value: function receivedJSON(objResponse) {
@@ -48,6 +57,11 @@ var ContentInstance = function () {
 				funDoOnReady.call();
 			});
 		}
+
+		/**
+   * Called to either execute a function when page has loaded, or to push a function to a stack to be executed when the page finishes loading.
+   **/
+
 	}, {
 		key: "onReady",
 		value: function onReady(funDoOnReady) {
@@ -58,11 +72,21 @@ var ContentInstance = function () {
 				this.arrOnReady.push(funDoOnReady);
 			}
 		}
+
+		/**
+   * Call with a string ID to ascertain data from JSON.
+   **/
+
 	}, {
 		key: "requestContent",
 		value: function requestContent(intItem) {
 			return this.objContent[intItem];
 		}
+
+		/**
+   * Call when page is ready to be populated. Inserts content into HTML.
+   **/
+
 	}, {
 		key: "populateHTML",
 		value: function populateHTML(sectionId) {

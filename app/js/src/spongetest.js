@@ -66,27 +66,3 @@ jQuery(
 		}
 );
 
-/**
- * Runs when the user clicks one of the "About Me" section tabs
- */
-var onTabClick = function(evt, tagToShow)
-{
-	
-	var aboutElementsArr = document.getElementsByClassName("about-content");
-	for(var i in aboutElementsArr)
-	{
-		aboutElementsArr[i].className = "about-content";
-	}
-	
-	var elem = document.getElementsByTagName(tagToShow)[0];
-	elem.className += " active";
-	
-	var tabContainer = document.getElementsByClassName("tabs")[0];
-	var tabsArray = tabContainer.getElementsByTagName("li");
-	for(var i in tabsArray)
-	{
-		tabsArray[i].className = "";
-	}
-	evt.target.parentNode.className += " current";
-	
-}

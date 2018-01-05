@@ -5,7 +5,7 @@
     "myname": "Andy Sargeant"
   },
   "about-me": {
-    "about" : "<p>Hello! Nice to e-meet you. Welcome to the About Me section.</p><p>I like making things and I like the great outdoors (it's great). Sometimes I even combine the two, and make things outdoors.</p><p>Last weekend I went for a walk with some friends. Whilst walking through a really muddy farmers field my wellington boot came off, but I didn't realise until it was too late. I plunged my besocked foot straight into the squelchy mud. The viscous brown mud was smelly and wet, and went up to my knee. Oh how we laughed!</p><p><strong>Fun Fact: I have a moustache</strong></p>",
+    "about" : "<p>Hello! Welcome to the About Me section.</p><p>I have been a software developer for many years, making games, websites, native mobile apps and some mad live music visualisations with a Kinect. I love making digital treats of all shapes and sizes.</p><p>When I'm not making software or games you can often find me strolling through the wilderness of Dartmoor, snorkelling at a nearby beach, undertaking a Body Combat class at the gym, or kicking back reading something with my cat Guy.</p><p>I have relished the challenge of this developer test, and learned a few new things along the way. I hope you enjoy reviewing it.</p>",
     "image" : "./resources/andy-portrait.jpg",
     "portfolio" : [
         {
