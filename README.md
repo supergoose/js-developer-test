@@ -1,5 +1,22 @@
 # Andrew Sargeant (Developer Test)
 
+## Installation
+1. Make sure you have NodeJS installed (I am using version 6.11.2)
+2. Clone this repository
+3. Open a Terminal / CMD window and CD to the directory which stores the repository
+4. Type `npm install` (this may take a minute)
+5. Type node server
+6. Navigate a browser to your localhost port 3000
+
+If you are using Cloud9 IDE like me, you may need to edit the server.js file from:
+`.listen( 3000, () => {
+	console.log( 'Server running on port 3000...' );
+} );`
+to:
+`.listen( process.env.PORT, process.env.IP, () => {
+	console.log( 'Server running on Cloud9 IDE env Port...' );
+} );`
+
 ## Task Time Tracking
 
 | Task                           | Time Taken |
