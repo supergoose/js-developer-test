@@ -44,17 +44,21 @@ to:
 
 ## Points of Note
 
-Adding the About Me section - I wanted to use JSON and Handlebars straightaway.
+###Task 5 Add Content
+I wanted to use JSON and Handlebars straightaway.
 
-Not sure whether the image for "photo" section should take responsive web development into account.
+Wasn't sure whether the image for "photo" section should take responsive web development into account.
 
-The Task stipulated "no libraries" - does this include not using the CSS that is currently implemented?
+Stipulated "no libraries" - does this include not using the CSS that is currently implemented?
 
-Task 10: Task Runner asked for me to add my dependencies to the package.json - wasn't sure if 
+###Task 10: Task Runner 
+This asked for me to add my dependencies to the package.json - wasn't sure if 
 this meant create an entirely seperate module and register it with NPM or to add to current
 package.json.
 
-Task 13: Transpile JavaScript - Installing Babel to transpile ES6 JS to ES5 also required installing Browserify to ensure module is accessible to browsers.
+###Task 13: Transpile JavaScript 
+Installing Babel to transpile ES6 JS to ES5 also required installing Browserify to ensure module is accessible to browsers.
 Issue discovered: Rephrased `export {ContentInstance}` to `export default` in order to overcome Babel 6 transpilation of import/export for ContentInstance class.
 
-Task 9: CSS boxes I left until last as I knew this would be one of the most time consuming activities. I have been able to test this on FireFox, Chrome and MS Edge. IE9/10/11 have been tested via the MS Edge emulator.
+###Task 9: CSS Boxes 
+I left until last as I knew this would be one of the most time consuming activities. I have been able to test this on FireFox, Chrome and MS Edge. IE9/10/11 have been tested via the MS Edge emulator.
